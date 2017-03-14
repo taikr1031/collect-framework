@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.collect.base.model.querymapper.QueryTaskMapper">
+  <select id="list" parameterType="map" resultType="com.xxx.collect.base.tool.task.model.Task">
+    SELECT * FROM task_info
+    <where>
+      <if test="taskName != null">
+        and task_name=#{taskName}
+      </if>
+      <if test="taskStatus != null">
+        and status=#{taskStatus}
+      </if>
+      <if test="infoId != null">
+        and info_id = #{infoId}
+      </if>
+    </where>
+    <if test="orderByStartDate != null">
+      order by start_date
+    </if>
+    <if test="fetchRows != null">
+      limit 0,#{fetchRows}
+    </if>
+  </select>
+</mapper>

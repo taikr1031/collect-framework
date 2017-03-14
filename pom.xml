@@ -11,6 +11,7 @@
   <modules>
     <module>collect-base</module>
     <module>collect-client</module>
+    <module>collect-core</module>
   </modules>
 
 
