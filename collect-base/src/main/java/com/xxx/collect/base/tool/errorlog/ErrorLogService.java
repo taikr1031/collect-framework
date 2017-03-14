@@ -1,8 +1,8 @@
 package com.xxx.collect.base.tool.errorlog;
 
+import com.xxx.collect.base.dao.ErrorLogMapper;
+import com.xxx.collect.base.model.ErrorLog;
 import com.xxx.collect.core.util.date.DateUtil;
-import com.gei.pd.base.dbpd.dbmapper.ErrorLogMapper;
-import com.gei.pd.base.dbpd.dbmodel.ErrorLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

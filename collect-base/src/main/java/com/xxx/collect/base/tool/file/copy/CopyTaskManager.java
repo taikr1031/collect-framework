@@ -2,6 +2,7 @@ package com.xxx.collect.base.tool.file.copy;
 
 import com.xxx.collect.base.tool.task.manager.ABaseManager;
 import com.xxx.collect.base.tool.task.model.Task;
+import com.xxx.collect.core.util.file.DirFileUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;

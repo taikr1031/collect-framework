@@ -1,7 +1,7 @@
 package com.xxx.collect.base.tool.task.model;
 
+import com.xxx.collect.base.model.TaskInfo;
 import com.xxx.collect.core.util.BeanUtil;
-import com.gei.pd.base.dbpd.dbmodel.TaskInfo;
 
 public class Task extends TaskInfo {
   public static final String STATUS_NEW = "NEW";
